@@ -1,7 +1,7 @@
 {
   "name": "semantic-release-jsconfbp-demo",
   "description": "demo",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.3-semantically-released",
   "author": "Stephan Bönnemann",
   "bugs": {
     "url": "https://github.com/boennemann/semantic-release-jsconfbp-demo/issues"
