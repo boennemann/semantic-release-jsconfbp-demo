@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- iojs-v1
+sudo: false
+cache:
+  directories:
+  - node_modules
+notifications:
+  email: false
+before_deploy:
+- npm config set spin false --global
+deploy:
+  provider: npm
+  email: stephan@boennemann.me
+  skip_cleanup: true
+  on:
+    branch: master
+    repo: boennemann/semantic-release-jsconfbp-demo
+  api_key:
+    secure: uu/fc3g6PqN1ue/y8WYgEJJUzxzQOT7XH3tDqq5IG9LRaUnPYujxbavUlzqxh29E9w///LonNYF3LtB2YF0uQ39pDuBrD3GBgudrYnuG9JerFE5v6N7PB0YqTMPzr6i2wBodOx/dpIEIIxgg4Vgs0duwUu0loKuiacp70eHEYwLq0S0dmJQllZenPSZ0Tj/y9pl6oT1XukNnpVc0eN6F74kB0Llr5XWzlx8cMbU9rkGso0Nvx0+rnCB9tI4XKsmzSb5sMC1y6hB5RbRo/xgBFpITNBXgpJ5y4I/GFChPHs5U38D1O2y3vAX3SA2Uo4SV+1S38dfMdDFg42+UOKFXNjEwil7WfwTdbJDVpRGfSr7fL9y7b53XgFjR9hQbKJQ3Q6k93oDGKsM3RFRSp6f1I30nc1b+Y+qLk2Arr/twN8MFQZ0hHLH6aB+KTD+n2tur07C3fz9DzatDyyszTHtBf3C/8HeOH5rsYt/Na8gU1uU0AmqcFydtVSzBzynZ9UxqoOInxaCsXQbdTV6gX7Tx2k4y03sYeIqIFBeNG1P7/iuSZ7GUVyDXZr7uTV8yvPc8g38ADe7jpcfD4KCfAbOEmX2cAWP3LR9VKH03iSoSpGlGZOjI0vkuq5ObrfmYQY5W0RWvq9wbmzW8zC2R70/dg7PHZYrl/zNQjt0cfwgQEQo=
